@@ -1,0 +1,153 @@
+.footer {
+	height: 252px;
+	padding: 60px 0px;
+	background-color: #2f303a;
+}
+
+.footer__box {
+	display: flex;
+	position: relative;
+}
+
+.footer__contacts {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.footer__socials {
+	position: absolute;
+	top: 0;
+	left: 300px;
+}
+
+.footer__subscr {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.footer__logo {
+	span {
+		color: var(--primary-bg-color);
+		margin-left: -6px;
+	}
+
+	&:hover,
+	&:focus {
+		opacity: 0.7;
+	}
+}
+
+.address__text {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	font-style: normal;
+}
+
+.address__link {
+	color: rgba(255, 255, 255, 0.6);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: #ffffff;
+	}
+}
+
+.footer__title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--primary-bg-color);
+	margin-top: 12px;
+	margin-bottom: 20px;
+}
+
+.footersoc {
+	display: flex;
+	justify-content: left;
+	gap: 10px;
+}
+
+.footersoc__link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: block;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		background-color: var(--accent);
+	}
+}
+
+.footersoc__icon {
+	fill: var(--primary-bg-color);
+
+	.footersoc__link:hover &,
+	.footersoc__link:focus & {
+		fill: var(--primary-bg-color);
+	}
+}
+
+.footer__form {
+	padding: 15px 16px;
+
+	width: 358px;
+	height: 50px;
+
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	color: #ffffff;
+
+	&::placeholder {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 0.6);
+	}
+}
+
+.footer__iconbox {
+	width: 24px;
+	height: 24px;
+}
+
+.footer__icon {
+	fill: #ffffff;
+}
+
+.footer__thump {
+	display: inline-block;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.footer__btn {
+	margin-left: 12px;
+}

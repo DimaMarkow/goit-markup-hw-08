@@ -1,0 +1,163 @@
+.form {
+	position: absolute;
+}
+
+.form__title {
+	display: block;
+	margin-bottom: 12px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: var(--title-text-color);
+}
+
+.form__field {
+	display: flex;
+
+	flex-direction: column;
+	margin-bottom: 10px;
+
+	width: 100%;
+
+	label {
+		display: block;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 1.17;
+		letter-spacing: 0.01em;
+
+		color: #757575;
+	}
+
+	textarea {
+		padding: 16px 12px;
+		resize: none;
+
+		width: 448px;
+		max-height: 120px;
+
+		color: #757575;
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		border-radius: 4px;
+	}
+
+	textarea::placeholder {
+		color: rgba(117, 117, 117, 0.5);
+	}
+}
+
+.form__thumb {
+	position: relative;
+}
+
+.form__input {
+	padding: 12px 42px;
+	width: 100%;
+	margin-top: 4px;
+	margin-bottom: 10px;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+
+	outline: transparent;
+	color: #757575;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:focus {
+		background-origin: border-box;
+		border: 1px solid var(--accent);
+	}
+}
+
+.form__icon {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+
+	width: 18px;
+	height: 18px;
+	fill: var(--title-text-color);
+
+	transform: translateY(-50%);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	.form__input:focus + & {
+		fill: var(--accent);
+	}
+}
+
+.argiment {
+	position: relative;
+	display: block;
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
+	color: #757575;
+
+	span {
+		margin-left: 8.38px;
+	}
+
+	.agriment__link {
+		color: var(--accent);
+		text-decoration: underline;
+	}
+}
+
+.argiment__checkbox {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: block;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.argiment__pict {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-left: 12px;
+	width: 16px;
+	height: 15px;
+	transform: translateY(-50%);
+
+	border: 2px solid var(--title-text-color);
+	border-radius: 2px;
+
+	.argiment__checkbox:checked + & {
+		background-image: url(../image/icon-check.svg);
+		background-size: contain;
+		background-origin: border-box;
+		border: none;
+		fill: #2196f3;
+	}
+}
+
+.agriment__bottom {
+	text-align: center;
+}
