@@ -1,10 +1,20 @@
 .work__list {
+	@media screen and (max-width: 1199px) {
+		display: none;
+		padding: 0px;
+	}
 	display: flex;
 	margin: -15px;
 	.item {
 		width: 370px;
 		margin: 15px;
 		position: relative;
+	}
+}
+
+.work__title {
+	@media screen and (max-width: 1199px) {
+		display: none;
 	}
 }
 
