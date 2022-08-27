@@ -24,38 +24,97 @@
 	<body class="page">
 		<header class="header">
 			<div class="container">
-				<nav class="navigation">
-					<a href="./" class="logo link">
-						Web
-						<span>Studio</span>
-					</a>
-					<ul class="navigation__list">
-						<li class="item">
-							<a href="./" class="navigation__link">Studio</a>
-						</li>
-						<li class="item"><a href="./portfolio.html" class="navigation__link current">Portfolio</a></li>
-						<li class="item"><a href="" class="navigation__link">Contacts</a></li>
-					</ul>
-				</nav>
-				<ul class="contacts">
-					<li class="contacts__item">
-						<a href="mailto:info@devstudio.com" class="contacts__link">
-							<svg class="contacts__icon" width="16" height="12">
-								<use href="./image/icons.svg#icon-envelope"></use>
-							</svg>
-							<span class="contacts__text">info@devstudio.com</span>
-						</a>
-					</li>
+				<a href="./" class="logo mob-logo link">
+					Web
+					<span>Studio</span>
+				</a>
 
-					<li class="contacts__item">
-						<a href="tel:+380961111111" class="contacts__link">
-							<svg class="contacts__icon" width="10" height="16">
-								<use href="./image/icons.svg#icon-smartphone"></use>
-							</svg>
-							<span class="contacts__text">+38 096 111 11 11</span>
+				<button class="menu-open" type="button">
+					<svg width="24" height="16"><use href="./image/icons.svg#icon-menu_24px"</svg>
+				</button>
+				<div class="mob-menu is-hidden">
+					<div class="container">
+						<nav class="menu-mob__navigation">
+							<button class="menu-close" type="button">
+								<svg width="19" height="19"><use href="./image/icons.svg#icon-close_24px"</svg>
+							</button>
+							<ul class="menu-mob__list">
+								<li class="item">
+									<a href="./" class="menu-mob__link menu-mob__current">Studio</a>
+								</li>
+								<li class="item"><a href="./portfolio.html" class="menu-mob__link">Portfolio</a></li>
+								<li class="item"><a href="" class="menu-mob__link">Contacts</a></li>
+							</ul>
+						</nav>
+						<div class="mob-menu-bottom">
+							<ul class="mob-contacts">
+								<li class="item">
+									<a href="tel:+380961111111" class="mob-contacts__link">+38 096 111 11 11</a>
+								</li>
+								<li class="item">
+									<a href="mailto:info@devstudio.com" class="mob-contacts__text">info@devstudio.com</a>
+								</li>
+							</ul>
+							<ul class="mob-soc">
+								<li class="item">
+									<a href="" class="mob-soc__link">
+										<span class="mob-soc__text">Instagram</span>
+									</a>
+								</li>
+								<li class="item">
+									<a href="" class="mob-soc__link">
+										<span class="mob-soc__text">Twitter</span>
+									</a>
+								</li>
+								<li class="item">
+									<a href="" class="mob-soc__link">
+										<span class="mob-soc__text">Facebook</span>
+									</a>
+								</li>
+								<li class="item">
+									<a href="" class="mob-soc__link">
+										<span class="mob-soc__text">LinkedIn</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="desctop-menu">
+					<nav class="navigation">
+						<a href="./" class="logo link">
+							Web
+							<span>Studio</span>
 						</a>
-					</li>
-				</ul>
+						<ul class="navigation__list">
+							<li class="item">
+								<a href="./" class="navigation__link">Studio</a>
+							</li>
+							<li class="item"><a href="./portfolio.html" class="navigation__link current">Portfolio</a></li>
+							<li class="item"><a href="" class="navigation__link">Contacts</a></li>
+						</ul>
+					</nav>
+					<ul class="contacts">
+						<li class="contacts__item">
+							<a href="mailto:info@devstudio.com" class="contacts__link">
+								<svg class="contacts__icon" width="16" height="12">
+									<use href="./image/icons.svg#icon-envelope"></use>
+								</svg>
+								<span class="contacts__text">info@devstudio.com</span>
+							</a>
+						</li>
+
+						<li class="contacts__item">
+							<a href="tel:+380961111111" class="contacts__link">
+								<svg class="contacts__icon" width="10" height="16">
+									<use href="./image/icons.svg#icon-smartphone"></use>
+								</svg>
+								<span class="contacts__text">+38 096 111 11 11</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -69,7 +128,7 @@
 						<button type="button" class="filter__button">Design</button>
 						<button type="button" class="filter__button">Marketing</button>
 					</div>
-					<ul class="card-set">
+					<!-- <ul class="card-set">
 						<li class="item">
 							<article class="card">
 								<div class="card__thumb">
@@ -103,7 +162,6 @@
 									<h3 class="card__header">Poster New Orlean vs Golden Star</h3>
 									<p class="card__text">Design</p>
 								</div>
-								<!--<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, rem.</p> -->
 							</article>
 						</li>
 
@@ -122,7 +180,6 @@
 									<h3 class="card__header">Ресторан Seafood</h3>
 									<p class="card__text">Apps</p>
 								</div>
-								<!--<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, rem.</p> -->
 							</article>
 						</li>
 
@@ -141,7 +198,6 @@
 									<h3 class="card__header">Project Prime</h3>
 									<p class="card__text">Marketing</p>
 								</div>
-								<!--<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, rem.</p> -->
 							</article>
 						</li>
 
@@ -160,7 +216,6 @@
 									<h3 class="card__header">Project Boxes</h3>
 									<p class="card__text">Apps</p>
 								</div>
-								<!--<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, rem.</p> -->
 							</article>
 						</li>
 						<li class="item">
@@ -178,7 +233,6 @@
 									<h3 class="card__header">Inspiration has no Borders</h3>
 									<p class="card__text">Web-site</p>
 								</div>
-								<!--<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, rem.</p> -->
 							</article>
 						</li>
 
@@ -197,7 +251,6 @@
 									<h3 class="card__header">Limited Edition</h3>
 									<p class="card__text">Design</p>
 								</div>
-								<!--<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, rem.</p> -->
 							</article>
 						</li>
 
@@ -216,7 +269,6 @@
 									<h3 class="card__header">Project LAB</h3>
 									<p class="card__text">Marketing</p>
 								</div>
-								<!--<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, rem.</p> -->
 							</article>
 						</li>
 
@@ -235,15 +287,14 @@
 									<h3 class="card__header">Growing Business</h3>
 									<p class="card__text">Apps</p>
 								</div>
-								<!--<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, rem.</p> -->
 							</article>
 						</li>
-					</ul>
+					</ul> -->
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer darkbgr">
+		<footer class="footer">
 			<div class="container">
 				<div class="footer__box">
 					<div class="footer__contacts">
@@ -257,7 +308,6 @@
 								<br />
 								United States
 							</p>
-
 							<ul>
 								<li><a href="mailto:info@example.com" class="address__link link">info@example.com</a></li>
 								<li><a href="tel:+121277241d50" class="address__link link">+1 212-772-4150</a></li>
@@ -299,20 +349,23 @@
 					</div>
 					<div class="footer__subscr">
 						<h3 class="footer__title">Підпишіться на розсилку</h3>
-						<input class="footer__form" type="email" name="subscr-form" placeholder="E-mail" />
-						<button class="btn footer__btn" type="submit">
-							<span class="footer__thump">
-								Підписатися
-								<span class="footer__iconbox">
-									<svg class="footer__icon" width="24" height="24">
-										<use href="./image/icons.svg#icon-icon-send"></use>
-									</svg>
+						<div class="footer__subscr--group">
+							<input class="footer__form" type="email" name="subscr-form" placeholder="E-mail" />
+							<button class="btn footer__btn" type="submit">
+								<span class="footer__thump">
+									Підписатися
+									<span class="footer__iconbox">
+										<svg class="footer__icon" width="24" height="24">
+											<use href="./image/icons.svg#icon-icon-send"></use>
+										</svg>
+									</span>
 								</span>
-							</span>
-						</button>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
