@@ -1,7 +1,14 @@
 .filter__list {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+
+	@media screen and (min-width: 768px) {
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
 }
 
 .filter__button {
@@ -10,7 +17,8 @@
 	border-radius: 4px;
 	padding: 6px 22px;
 	margin-right: 8px;
-	margin-bottom: 56px;
+	margin-bottom: 15px;
+	height: auto;
 
 	color: var(--title-text-color);
 	background-color: #f5f4fa;

@@ -407,6 +407,7 @@ body {
 
 .mob-menu {
   position: fixed;
+  z-index: 5;
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
@@ -1137,8 +1138,16 @@ body {
 
 .filter__list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
 }
 
 .filter__button {
@@ -1147,7 +1156,8 @@ body {
   border-radius: 4px;
   padding: 6px 22px;
   margin-right: 8px;
-  margin-bottom: 56px;
+  margin-bottom: 15px;
+  height: auto;
   color: var(--title-text-color);
   background-color: #f5f4fa;
   font-weight: 500;
@@ -1171,20 +1181,38 @@ body {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  margin: -15px;
+}
+@media screen and (min-width: 768px) {
+  .card-set {
+    align-items: stretch;
+    margin: -15px;
+  }
 }
 .card-set > .item {
-  flex-basis: calc(33.3333333333% - 30px);
-  margin: 15px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .card-set > .item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-set > .item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 .card-set > .item:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .card__thumb {
-  display: inline-block;
+  display: block;
   position: relative;
   overflow: hidden;
 }
@@ -1234,5 +1262,4 @@ body {
 
 .card__content {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
 }/*# sourceMappingURL=main.css.map */
