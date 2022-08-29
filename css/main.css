@@ -71,6 +71,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .section-no-padding {
   padding-bottom: 94px;
@@ -135,11 +141,12 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -389,7 +396,6 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
-  padding-top: 16px;
 }
 
 .header > .container,
@@ -612,12 +618,8 @@ body {
   display: flex;
   display: block;
   position: relative;
-  margin-bottom: 10px;
+  fill: #757575;
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -637,6 +639,20 @@ body {
 
 .contacts__text {
   margin-left: 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.contacts__text:hover, .contacts__text:focus {
+  color: var(--accent);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__text {
+    font-size: 14px;
+  }
 }
 
 .contacts__icon {
@@ -780,6 +796,7 @@ body {
 
 .benefits__subtitle {
   color: var(--title-text-color);
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -787,6 +804,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__subtitle {
+    text-align: left;
+  }
 }
 
 .benefits__text {
@@ -943,11 +965,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .clients__list {
-    margin: -15px;
-  }
+  margin: -15px;
 }
 
 .clients__item {
@@ -1243,6 +1261,22 @@ body {
   color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .filter.section {
+    padding: 60px 0px 45px 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter.section {
+    padding: 60px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter.section {
+    padding: 94px 0px;
+  }
 }
 
 .card-set {

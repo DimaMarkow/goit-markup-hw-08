@@ -44,3 +44,17 @@
 		cursor: pointer;
 	}
 }
+
+.filter.section {
+	@media screen and (max-width: 767px) {
+		padding: 60px 0px 45px 0px;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 60px 0px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 94px 0px;
+	}
+}
