@@ -770,6 +770,11 @@ body {
   width: 100%;
   height: auto;
 }
+@media screen and (max-width: 767px) {
+  .benefits__list .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .benefits__list .item {
     width: calc((100% - 60px) / 2);
@@ -816,7 +821,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
   .benefits__text .benefits__text:last-child {
