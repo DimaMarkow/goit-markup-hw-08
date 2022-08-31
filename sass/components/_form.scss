@@ -103,9 +103,10 @@
 	display: flex;
 	margin-top: 20px;
 	margin-bottom: 30px;
-	justify-content: center;
+
+	// justify-content: center;
 	align-items: center;
-	gap: 4px;
+	// gap: 4px;
 
 	font-weight: 400;
 	font-size: 12px;
@@ -116,7 +117,7 @@
 
 	@media screen and (max-width: 479px) {
 		font-size: 6.5px;
-		justify-content: right;
+		// justify-content: right;
 	}
 
 	span {
@@ -147,6 +148,10 @@
 	top: 50%;
 	left: 0;
 	transform: translateY(-50%);
+}
+
+.argiment__space {
+	width: 20px;
 }
 
 .argiment__pict {

@@ -326,9 +326,7 @@ body {
   display: flex;
   margin-top: 20px;
   margin-bottom: 30px;
-  justify-content: center;
   align-items: center;
-  gap: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.71;
@@ -338,7 +336,6 @@ body {
 @media screen and (max-width: 479px) {
   .argiment {
     font-size: 6.5px;
-    justify-content: right;
   }
 }
 .argiment span {
@@ -368,6 +365,10 @@ body {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+}
+
+.argiment__space {
+  width: 20px;
 }
 
 .argiment__pict {
